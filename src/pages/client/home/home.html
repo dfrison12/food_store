@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Food Store</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header>
+    <h1>Food Store</h1>
+    <nav>
+      <a href="./home.html">Inicio</a>
+      <a href="../cart/cart.html">Carrito</a>
+      <button id="logoutButton" class="secondary-button" type="button">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <aside>
+      <h2>Categorías</h2>
+      <div id="category-list" class="category-list"></div>
+    </aside>
+
+    <main>
+      <div class="search-box">
+        <label for="search">Buscar productos:</label>
+        <input id="search" type="text" placeholder="Ej: Pizza Muzzarella">
+      </div>
+
+      <p id="confirmation-message" class="confirmation-message"></p>
+      <h2>Productos</h2>
+      <section id="product-list" class="product-list"></section>
+      <p id="empty-message" class="empty-message"></p>
+    </main>
+  </div>
+
+  <footer>
+    <p>2026 Food Store. Todos los derechos reservados.</p>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="./home.ts"></script>
+</body>
+</html>
