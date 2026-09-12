@@ -40,5 +40,11 @@ export const removeFromCart = (productId: number): void => {
 }
 
 export const calculateTotal = (items: ICartItem[]): number => {
-  return items.reduce((total, item) => total + item.precio * item.cantidad, 0)
+  let total = 0
+
+  items.forEach((item) => {
+    total += item.precio * item.cantidad
+  })
+
+  return total
 }
