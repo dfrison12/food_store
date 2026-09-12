@@ -1,6 +1,6 @@
 import type { ICartItem } from '../../../types/product'
 import { logout } from '../../../utils/auth'
-import { calculateTotal, getCartItems } from '../../../utils/cart'
+import { calculateTotal, getCartItems, removeFromCart } from '../../../utils/cart'
 
 const cartList = document.getElementById('cart-list') as HTMLDivElement
 const emptyCart = document.getElementById('empty-cart') as HTMLParagraphElement
@@ -33,7 +33,15 @@ const renderCart = (items: ICartItem[]): void => {
         <p>Cantidad: ${item.cantidad}</p>
         <p><strong>Subtotal: ${formatPrice(item.precio * item.cantidad)}</strong></p>
       </div>
+      <button class="remove-button" type="button">Quitar</button>
     `
+
+    const removeButton = article.querySelector('.remove-button') as HTMLButtonElement
+    removeButton.addEventListener('click', () => {
+      removeFromCart(item.id)
+      renderCart(getCartItems())
+    })
+
     cartList.appendChild(article)
   })
 

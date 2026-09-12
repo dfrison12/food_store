@@ -33,6 +33,12 @@ export const addToCart = (product: IProduct): void => {
   }
 }
 
+export const removeFromCart = (productId: number): void => {
+  const items = getCartItems()
+  const updatedItems = items.filter((item) => item.id !== productId)
+  saveCartItems(updatedItems)
+}
+
 export const calculateTotal = (items: ICartItem[]): number => {
   return items.reduce((total, item) => total + item.precio * item.cantidad, 0)
 }

@@ -6,7 +6,7 @@
   <title>Carrito - Food Store</title>
   <link rel="stylesheet" href="/src/style.css">
 </head>
-<body>
+<body class="client-page">
   <header>
     <h1>Food Store</h1>
     <nav>
@@ -17,8 +17,10 @@
 
   <main class="cart-page">
     <h2>Mi carrito</h2>
-    <div id="cart-list" class="cart-list"></div>
-    <p id="empty-cart" class="empty-message"></p>
+    <div class="cart-scroll">
+      <div id="cart-list" class="cart-list"></div>
+      <p id="empty-cart" class="empty-message"></p>
+    </div>
     <div id="cart-total" class="cart-total"></div>
   </main>
 

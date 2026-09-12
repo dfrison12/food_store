@@ -14,6 +14,7 @@ Para este parcial amplié el proyecto Food Store que veníamos trabajando. Ahora
 - El carrito queda guardado en `localStorage`, por lo que no se pierde al recargar la página.
 - Cuando se agrega más de una vez el mismo producto, aumenta su cantidad en lugar de repetirse.
 - En la página del carrito se muestran los productos elegidos, sus cantidades, los subtotales y el total de la compra.
+- Cada producto se puede quitar del carrito y el total se actualiza en el momento.
 - Si todavía no se agregó ningún producto, se informa que el carrito está vacío.
 - Los productos que no tienen stock se muestran como no disponibles y no se pueden agregar.
 
@@ -47,4 +48,9 @@ pnpm build
 - Email: `admin@foodstore.com`
 - Contraseña: `Admin123`
 
-También se puede crear un usuario cliente desde la pantalla de registro.
+## Acceso como cliente
+
+- Email: `cliente@foodstore.com`
+- Contraseña: `Cliente123`
+
+También se puede crear una cuenta diferente desde la pantalla de registro.
