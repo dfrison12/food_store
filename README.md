@@ -4,7 +4,7 @@ Para este parcial amplié el proyecto Food Store que veníamos trabajando. Ahora
 
 ## Video de presentación
 
-https://youtu.be/kgL_ooENrok
+[Explication Video](https://youtu.be/kgL_ooENrok)
 
 ## Funcionalidades implementadas
 
