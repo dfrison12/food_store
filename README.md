@@ -4,6 +4,8 @@ Para este parcial amplié el proyecto Food Store que veníamos trabajando. Ahora
 
 ## Video de presentación
 
+https://youtu.be/kgL_ooENrok
+
 ## Funcionalidades implementadas
 
 - Los productos y las categorías se cargan desde el archivo `src/data/data.ts`.
